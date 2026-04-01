@@ -6,9 +6,9 @@
 #
 
 set -x
-cd ..
-SOURCE_HOME="$PWD"
+SOURCE_HOME="$PWD/0/redis-bin"
+
 
 make & make PREFIX="$SOURCE_HOME" install
-cp redis.conf sentinel.conf "$SOURCE_HOME/bin"
-make clean
+cp redis.conf sentinel.conf "$SOURCE_HOME"
+#make clean
